@@ -36,3 +36,22 @@ var myBackpack = {
     clothing: 'hat'
 };
 print(myBackPack.food);
+
+// Manipulando objetos com array.
+var myBackpack = {
+    food: [
+        'maçã',
+        'manga'
+    ],
+    equipment: [
+        'marreta',
+        'pederneira'
+    ],
+    clothing: [
+        'tennis',
+        'blusa'
+    ]
+};
+print(myBackpack.food);
+print(myBackpack.equipment);
+print(myBackpack.clothing);
