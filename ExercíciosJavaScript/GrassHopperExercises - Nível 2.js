@@ -67,3 +67,9 @@ let grasshopper = 0;
 ant -= gift;
 grasshopper += gift;
 print('The Ant has ' + ant + ' seeds, and the Grasshopper has ' + grasshopper + ' seeds');
+
+// Console.log()
+// Isso é útil para depurar, testar o resultado ou visualizar avisos e mensagens de erro sobre o código.
+print('In Grasshopper, the print() function logs strings and numbers to the console window');
+console.log('console.log can also log to the console window');
+console.log('Esse console é exibido nas ferramentas de desenvolvedor do navegador (pressionando f12 no Firefox/Chrome). Normalmente, não é visível por usuários comuns, apenas desenvolvedores;');
