@@ -60,3 +60,10 @@ var train = 3;
 var car = 2;
 car < train ? print('Drive a car - TRUE') : print('Buy train tickets - FALSE');
 
+// Operador de atribuição adição e atribuição subtração.
+let ant = 40;
+let gift = 10;
+let grasshopper = 0;
+ant -= gift;
+grasshopper += gift;
+print('The Ant has ' + ant + ' seeds, and the Grasshopper has ' + grasshopper + ' seeds');
