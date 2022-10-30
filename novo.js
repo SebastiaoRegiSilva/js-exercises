@@ -64,3 +64,12 @@ for (var element of otherBackpack.equipment) {
         print('I found some rope!');
     }
 };
+
+// Encontrar a quantidade de caracteres de uma string. Acesso pela propriedade da classe.
+print(message);
+if (message.length > 80) {
+    print('The message is too long for a postcard.');
+}
+if (message.length < 80) {
+    print('The message fits on a postcard');
+};
