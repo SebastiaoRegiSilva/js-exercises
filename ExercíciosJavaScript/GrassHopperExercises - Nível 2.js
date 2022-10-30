@@ -58,4 +58,5 @@ var daysNeeded = 5;
 timeOffWork > daysNeeded ? print('Go on vacation') : print('Go to work');
 var train = 3;
 var car = 2;
-car < train ? print('Drive a car') : print('Buy train tickets');
+car < train ? print('Drive a car - TRUE') : print('Buy train tickets - FALSE');
+
