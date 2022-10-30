@@ -17,3 +17,12 @@ for (var adj of [
 }
 
 // Os laços aninhados farão todas as combinações das 2 arrays.
+
+// Alterar propriedades dentro de um objeto JSON.
+var name = {
+    first: 'Martin ',
+    middle: 'Luther ',
+    last: 'Simpson'
+};
+// Estrutura chave : valor. 
+print(name.first + name.middle + name.last);
