@@ -26,3 +26,5 @@ var name = {
 };
 // Estrutura chave : valor. 
 print(name.first + name.middle + name.last);
+
+print('I am going to climb a mountain!');
