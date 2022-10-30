@@ -24,3 +24,30 @@ var message = 'Today we are going shopping!';
 message = message.replace('day', 'morrow');
 print(message);
 
+// Escopo de variável.
+// A chave var geralmente cria variáveis globais. 
+// A chave let permite que você crie variáveis locais.
+
+// No código abaixo, a variável myLocalNumber é declarada usando a chave let. 
+// Isso significa que ele só existe dentro do bloco da if statement. 
+// O impossibleCalculation não funcionará porque a variável myLocalNumber 
+// não existe fora da if statement.
+
+var myGlobalNumber = 5;
+if (myGlobalNumber > 3) {
+    let myLocalNumber = 4;
+}
+var impossibleCalculation = myGlobalNumber + myLocalNumber;
+
+// Exemplo de uso de variáveis locais.
+var color = 'yellow';
+drawBox(color);
+for (let color of [
+    'blue',
+    'green',
+    ___
+]) {
+    drawBox(color);
+    ___
+}
+drawBox(color);
