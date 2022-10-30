@@ -17,3 +17,10 @@ if (chat.includes('hello')) {
 if (chat.includes('bye')) {
     print('See you later, have a great trip!');
 }
+
+// O método .replace() procura um valor e, 
+//   se o encontrar, substituirá o 1º valor por uma nova string.
+var message = 'Today we are going shopping!';
+message = message.replace('day', 'morrow');
+print(message);
+
