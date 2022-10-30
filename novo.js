@@ -55,3 +55,12 @@ var myBackpack = {
 print(myBackpack.food);
 print(myBackpack.equipment);
 print(myBackpack.clothing);
+
+// Exemplo de laço aninhado.
+for (var element of otherBackpack.equipment) {
+    if (element === 'rope') {
+        print('A compass is not useful right now');
+    } else {
+        print('I found some rope!');
+    }
+};
