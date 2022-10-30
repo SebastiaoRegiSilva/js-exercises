@@ -30,7 +30,7 @@ print(name.first + name.middle + name.last);
 print('I am going to climb a mountain!');
 
 // Criando objetos JSON.
-var myBackPack = {
+var myBackpack = {
     food: 'bananas',
     equipment: 'map',
     clothing: 'hat'
