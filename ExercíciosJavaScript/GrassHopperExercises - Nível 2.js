@@ -143,3 +143,8 @@ function myAssistant(time, callbackFunction, ___) {
 };
 myAssistant('8am', turnOnFan);
 myAssistant('10am', turnOffFan);
+
+// Mais um exemplo de import.
+import { listOfDestinations } from 'grasshopper.travel';
+let numberOfDestinations = listOfDestinations.length;
+console.log('There are ' + numberOfDestinations + ' to choose from.');
