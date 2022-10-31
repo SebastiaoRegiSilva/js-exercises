@@ -73,3 +73,16 @@ print('The Ant has ' + ant + ' seeds, and the Grasshopper has ' + grasshopper + 
 print('In Grasshopper, the print() function logs strings and numbers to the console window');
 console.log('console.log can also log to the console window');
 console.log('Esse console é exibido nas ferramentas de desenvolvedor do navegador (pressionando f12 no Firefox/Chrome). Normalmente, não é visível por usuários comuns, apenas desenvolvedores;');
+
+// Exemplo de console.log() num eventual câmbio.
+// Declarando uma função em JS.
+
+function inYen(dollars, ___) {
+    let amount = dollars * 113;
+    return amount;
+};
+
+console.log('20 US dollars is:');
+console.log(inYen(20) + ' Japanese yen');
+console.log('100 US dollars is:');
+console.log(inYen(100) + ' Japanese yen');
