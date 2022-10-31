@@ -136,9 +136,9 @@ myAssistant('8am', turnOnLights);
 // import para importar uma função para usar como um retorno de chamada. 
 // Um comando de importação é uma maneira de usar o código armazenado em um local diferente.
 import { recordShow, setAlarm, turnOffFan, turnOnFan, turnOffLight, turnOnLight } from 'assistantFunctions';
-function myAssistant(time, callbackFunction, ___) {
+function myAssistant(time, callbackFunction, ) {
     console.log('Scheduling:');
-    callbackFunction(time, ___);
+    callbackFunction(time, );
     console.log('Complete.');
 };
 myAssistant('8am', turnOnFan);
@@ -207,10 +207,10 @@ console.log(departures.length + ' total times');
 // Cada item na array é usado como um argumento em uma função retorno de chamada 
 // e se retornar true, o item passa pelo filtro. Caso contrário, o item é filtrado.
 import { departures } from 'grasshopper.travel';
-function morning(time, ___) {
+function morning(time, ) {
     return time.includes('am');
 };
-function evening(time, ___) {
+function evening(time, ) {
     return time.includes('pm');
 };
 let amTimes = departures.filter(morning);
@@ -222,10 +222,10 @@ console.log('Night times: ' + pmTimes);
 import { flightPrices } from 'grasshopper.travel';
 let max = flightPrices[0];
 let min = flightPrices[0];
-function compareToMaximum(value, ___) {
+function compareToMaximum(value) {
     max = value > max ? value : max;
 };
-function compareToMinimum(value, ___) {
+function compareToMinimum(value) {
     min = value < min ? value : min;
 };
 console.log(flightPrices);
@@ -236,21 +236,32 @@ console.log('Minimum: ' + min);
 
 // Uso da função .getData() para uso de API grasshopper.reviews.
 import { getData, findHotels } from 'grasshopper.reviews';
-function printHotel(hotel, ___) {
-    console.log('___HOTEL_INFO___');
+function printHotel(hotel) {
+    console.log('HOTEL_INFO');
     console.log('type: ' + hotel.type);
     console.log('city: ' + hotel.city);
     console.log('price: ' + hotel.price);
     console.log('rating: ' + hotel.rating);
 };
-let grasslandHotels = getData('Grassland', findHotels, ___);
+let grasslandHotels = getData('Grassland', findHotels);
 grasslandHotels.forEach(printHotel);
 
 // For em API.
 import { getData, findHotels } from 'grasshopper.reviews';
-let grasslandHotels1 = getData('Grassland', findHotels, ___);
+let grasslandHotels1 = getData('Grassland', findHotels);
 for (var element of grasslandHotels) {
     console.log(element.rating);
 }
 
-
+// Busca de classificação de hotéis dentro de uma função.
+import { getData, findHotels } from 'grasshopper.reviews';
+function getRatings(hotelList) {
+    let ratings = [];
+    for (var element of hotelList) {
+        ratings.push(element.rating);
+    }
+    return ratings;
+};
+let grasslandHotels2 = getData('Grassland', findHotels);
+console.log('Ratings Array:');
+console.log(getRatings(grasslandHotels));
