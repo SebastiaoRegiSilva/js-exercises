@@ -45,10 +45,8 @@ drawBox(color);
 for (let color of [
     'blue',
     'green',
-    ___
 ]) {
     drawBox(color);
-    ___
 }
 drawBox(color);
 
@@ -77,7 +75,7 @@ console.log('Esse console é exibido nas ferramentas de desenvolvedor do navegad
 // Exemplo de console.log() num eventual câmbio.
 // Declarando uma função em JS.
 
-function inYen(dollars, ___) {
+function inYen(dollars) {
     let amount = dollars * 113;
     return amount;
 };
@@ -89,11 +87,11 @@ console.log(inYen(100) + ' Japanese yen');
 
 // Criando funções.
 let wallet = 50;
-function inYen(dollars, ___) {
+function inYen(dollars) {
     let yen = dollars * 113;
     return yen;
 };
-function inBaht(dollars, ___) {
+function inBaht(dollars) {
     let baht = dollars * 33;
     return baht;
 };
@@ -102,14 +100,13 @@ console.log(inYen(wallet) + ' Japanese yen');
 console.log(inBaht(wallet) + ' Thai baht');
 
 // Entender melhor essas duas funções!
-function larger(a, b, ___) {
+function larger(a, b) {
     return a > b ? a : b;
 };
-function maximum(array, ___) {
+function maximum(array) {
     let max = 0;
     for (let num of array) {
         max = larger(max, num);
-        ___
     }
     return max;
 };
@@ -117,7 +114,7 @@ console.log(list);
 console.log(maximum(list));
 
 // Uma função recursiva que é rodada novamente até que todos os erros de digitação de um documento sejam corrigidos.
-function updateAllNames(string, oldPart, newPart, ___) {
+function updateAllNames(string, oldPart, newPart) {
     if (string.includes(oldPart) === false) {
         return string;
     }
@@ -127,3 +124,11 @@ function updateAllNames(string, oldPart, newPart, ___) {
 console.log(travelDocument);
 console.log(updateAllNames(travelDocument, 'grasshoper', 'grasshopper'));
 
+// Utilizando uma função como parâmetro para outra.
+function myAssistant(time, callbackFunction) {
+    console.log('I am your personal assistant, and I am happy to help with your request');
+    callbackFunction(time);
+};
+myAssistant('6pm', recordShow);
+myAssistant(time, setAlarm);
+myAssistant('8am', turnOnLights)
