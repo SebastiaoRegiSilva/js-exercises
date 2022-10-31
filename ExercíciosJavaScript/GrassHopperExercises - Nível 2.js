@@ -149,7 +149,7 @@ import { listOfDestinations } from 'grasshopper.travel';
 let numberOfDestinations = listOfDestinations.length;
 console.log('There are ' + numberOfDestinations + ' to choose from.');
 
-// Uso da função .slice();
+// Uso da função .slice().
 // O método .slice() cria uma nova array copiando uma subseção de outra array. 
 // São necessários 2 argumentos: um índice de array onde começar a copiar e um índice onde terminar (fim não incluído).
 import { transportation } from 'grasshopper.travel';
@@ -160,9 +160,26 @@ let cities = [
     'Lagos',
     'Lisbon',
     'Louisville',
-    ___
 ];
 console.log(cities.slice(2, 6));
 console.log(transportation.slice(2, 6));
+
+// Uso da função .push().
+// O método .push() para adicionar um novo elemento ao final de uma array.
+import { travelToCities } from 'grasshopper.travel';
+let last = travelToCities[travelToCities.length - 1];
+console.log(last.destination);
+let boatAtlanta = {
+    destination: 'Atlanta',
+    transportMode: 'boat',
+    cost: 200,
+    countryedit: 'Hoptopia',
+    ___: ___
+};
+travelToCities.push(boatAtlanta);
+last = travelToCities[travelToCities.length - 1];
+console.log(last.destination);
+
+
 
 
