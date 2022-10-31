@@ -115,3 +115,15 @@ function maximum(array, ___) {
 };
 console.log(list);
 console.log(maximum(list));
+
+// Uma função recursiva que é rodada novamente até que todos os erros de digitação de um documento sejam corrigidos.
+function updateAllNames(string, oldPart, newPart, ___) {
+    if (string.includes(oldPart) === false) {
+        return string;
+    }
+    string = string.replace(oldPart, newPart);
+    return updateAllNames(string, oldPart, newPart);
+};
+console.log(travelDocument);
+console.log(updateAllNames(travelDocument, 'grasshoper', 'grasshopper'));
+
