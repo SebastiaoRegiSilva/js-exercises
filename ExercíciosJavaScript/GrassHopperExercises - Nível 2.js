@@ -131,4 +131,15 @@ function myAssistant(time, callbackFunction) {
 };
 myAssistant('6pm', recordShow);
 myAssistant(time, setAlarm);
-myAssistant('8am', turnOnLights)
+myAssistant('8am', turnOnLights);
+
+// import para importar uma função para usar como um retorno de chamada. 
+// Um comando de importação é uma maneira de usar o código armazenado em um local diferente.
+import { recordShow, setAlarm, turnOffFan, turnOnFan, turnOffLight, turnOnLight } from 'assistantFunctions';
+function myAssistant(time, callbackFunction, ___) {
+    console.log('Scheduling:');
+    callbackFunction(time, ___);
+    console.log('Complete.');
+};
+myAssistant('8am', turnOnFan);
+myAssistant('10am', turnOffFan);
