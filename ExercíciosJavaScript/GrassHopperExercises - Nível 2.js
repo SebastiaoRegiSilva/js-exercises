@@ -173,8 +173,7 @@ let boatAtlanta = {
     destination: 'Atlanta',
     transportMode: 'boat',
     cost: 200,
-    countryedit: 'Hoptopia',
-    ___: ___
+    countryedit: 'Hoptopia'
 };
 travelToCities.push(boatAtlanta);
 last = travelToCities[travelToCities.length - 1];
@@ -189,6 +188,21 @@ travelToCities.push(atlantaTravel);
 let last1 = travelToCities[travelToCities.length - 1];
 console.log(last.destination);
 console.log(last.transportMode);
+
+// Operador de propagação...
+// Copiar todos os elementos de uma array em outra array.
+import { flights, trains, buses } from 'grasshopper.travel';
+let departures = [
+    ...flights,
+    ...trains,
+    ...buses
+];
+for (let time of departures) {
+    console.log(time);
+}
+console.log(departures.length + ' total times');
+
+
 
 
 
