@@ -100,3 +100,18 @@ function inBaht(dollars, ___) {
 console.log(wallet + ' US dollars is:');
 console.log(inYen(wallet) + ' Japanese yen');
 console.log(inBaht(wallet) + ' Thai baht');
+
+// Entender melhor essas duas funções!
+function larger(a, b, ___) {
+    return a > b ? a : b;
+};
+function maximum(array, ___) {
+    let max = 0;
+    for (let num of array) {
+        max = larger(max, num);
+        ___
+    }
+    return max;
+};
+console.log(list);
+console.log(maximum(list));
