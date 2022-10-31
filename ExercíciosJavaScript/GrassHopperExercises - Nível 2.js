@@ -218,6 +218,22 @@ let pmTimes = departures.filter(evening);
 console.log('Day times: ' + amTimes);
 console.log('Night times: ' + pmTimes);
 
+// Uso do foreach.
+import { flightPrices } from 'grasshopper.travel';
+let max = flightPrices[0];
+let min = flightPrices[0];
+function compareToMaximum(value, ___) {
+    max = value > max ? value : max;
+};
+function compareToMinimum(value, ___) {
+    min = value < min ? value : min;
+};
+console.log(flightPrices);
+flightPrices.forEach(compareToMaximum);
+flightPrices.forEach(compareToMinimum);
+console.log('Maximum: ' + max);
+console.log('Minimum: ' + min);
+
 
 
 
