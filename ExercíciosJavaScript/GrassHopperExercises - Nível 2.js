@@ -265,3 +265,20 @@ function getRatings(hotelList) {
 let grasslandHotels2 = getData('Grassland', findHotels);
 console.log('Ratings Array:');
 console.log(getRatings(grasslandHotels));
+
+// Obter média com o .average()
+import { getData, findHotels } from 'grasshopper.reviews';
+import { getRatings } from 'myFunctions';
+function average(array) {
+    let total = 0;
+    for (let element of array) {
+        total += element;
+    }
+    return total / array.length;
+};
+let grasslandRatings = getRatings(getData('Grassland', findHotels));
+console.log(grasslandRatings);
+console.log('The average is:');
+console.log(average(grasslandRatings));
+
+
