@@ -246,5 +246,11 @@ function printHotel(hotel, ___) {
 let grasslandHotels = getData('Grassland', findHotels, ___);
 grasslandHotels.forEach(printHotel);
 
+// For em API.
+import { getData, findHotels } from 'grasshopper.reviews';
+let grasslandHotels1 = getData('Grassland', findHotels, ___);
+for (var element of grasslandHotels) {
+    console.log(element.rating);
+}
 
 
