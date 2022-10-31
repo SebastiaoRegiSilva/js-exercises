@@ -281,4 +281,14 @@ console.log(grasslandRatings);
 console.log('The average is:');
 console.log(average(grasslandRatings));
 
-
+// Filtro para selecionar hotéis com um .price inferior a $ 100. 
+// Em seguida, você usou esse filtro para obter a avaliação média de todos os hotéis em Grassland abaixo de $ 100 por noite.
+import { getData, findHotels } from 'grasshopper.reviews';
+import { averageRating } from 'myFunctions';
+let grasslandHotels4 = getData('Grassland', findHotels);
+function underAHundred(hotel) {
+    return hotel.price < 100;
+};
+let affordableHotels = grasslandHotels.filter(underAHundred);
+console.log('Average Rating in Grassland under $100:');
+console.log(averageRating(affordableHotels));
