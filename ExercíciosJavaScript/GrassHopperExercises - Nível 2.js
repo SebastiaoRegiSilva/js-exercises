@@ -86,3 +86,17 @@ console.log('20 US dollars is:');
 console.log(inYen(20) + ' Japanese yen');
 console.log('100 US dollars is:');
 console.log(inYen(100) + ' Japanese yen');
+
+// Criando funções.
+let wallet = 50;
+function inYen(dollars, ___) {
+    let yen = dollars * 113;
+    return yen;
+};
+function inBaht(dollars, ___) {
+    let baht = dollars * 33;
+    return baht;
+};
+console.log(wallet + ' US dollars is:');
+console.log(inYen(wallet) + ' Japanese yen');
+console.log(inBaht(wallet) + ' Thai baht');
