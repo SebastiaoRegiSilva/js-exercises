@@ -1,0 +1,1 @@
+echo "Instalação do Java."
